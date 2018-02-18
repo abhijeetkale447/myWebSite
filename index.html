@@ -23,7 +23,10 @@ http://www.templatemo.com/tm-486-new-event
 
 <!-- Google Font -->
 <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
-
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="https://unpkg.com/nanogallery2@2.0.0/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://unpkg.com/nanogallery2@2.0.0/dist/jquery.nanogallery2.min.js"></script>
 </head>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
@@ -96,25 +99,40 @@ http://www.templatemo.com/tm-486-new-event
 <!-- =========================
     OVERVIEW SECTION   
 ============================== -->
-<!--
+
 <section id="overview" class="parallax-section">
 	<div class="container">
-		<div class="row">
-
-			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
-				<h3>New Event is a fully responsive one-page template for events, conferences or workshops.</h3>
-				<p>This is a Bootstrap v3.3.6 layout that is responsive and mobile friendly. You may download and modify this template for your website. Please tell your friends about templatemo.</p>
-				<p>Quisque facilisis scelerisque venenatis. Nam vulputate ultricies luctus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-			</div>
-					
-			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
-				<img src="images/overview-img.jpg" class="img-responsive" alt="Overview">
-			</div>
-
-		</div>
-	</div>
+	<h1 align="center"><font color="#f2545f" class="wow fadeInUp" data-wow-delay="0.5s">Photographer</font><font class="wow fadeInUp"data-wow-delay="1.5s"> by hobby.</font></h1>
+    <div data-nanogallery2='{
+        "kind":            "flickr",
+        "userID":          "159692467@N08",
+        "photoset":        "72157691828489431",
+        "thumbnailWidth": "auto",
+        "thumbnailHeight": "400",
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        "colorScheme": {
+          "thumbnail": {
+            "background": "rgba(255,255,255,1)"
+          }
+        },
+        "thumbnailDisplayTransition": "slideRight",
+        "thumbnailDisplayTransitionDuration": 1500,
+        "thumbnailLabel": {
+          "position": "overImageOnMiddle",
+          "displayDescription": true,
+          "descriptionMultiLine": true
+        },
+        "thumbnailHoverEffect2": "imageScaleIn80|imageSepiaOff|labelAppear75",
+        "galleryDisplayMode": "rows",
+        "galleryMaxRows": 5,
+        "thumbnailAlignment": "left",
+        "thumbnailGutterWidth": 0,
+        "thumbnailGutterHeight": 0,
+        "gallerySorting": "random"
+      }'>
+    </div>
 </section>
--->
 
 <!-- =========================
     DETAIL SECTION   
@@ -667,6 +685,6 @@ http://www.templatemo.com/tm-486-new-event
 <script src="js/smoothscroll.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
-
+<script src="nanogallery2-2.0.0/dist/jquery.nanogallery2.js"></script>
 </body>
 </html>
